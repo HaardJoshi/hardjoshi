@@ -1,27 +1,28 @@
-import { ArrowRight, Github, Linkedin } from 'lucide-react'
+import { ArrowRight, Github, Linkedin } from "lucide-react";
 
 const Hero = () => {
   const scrollToContact = () => {
-    const element = document.querySelector('#contact')
+    const element = document.querySelector("#contact");
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
+      element.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   const scrollToProjects = () => {
-    const element = document.querySelector('#projects')
+    const element = document.querySelector("#projects");
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
+      element.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   return (
     <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url(/images/minimalist-blue-green-gradient-data-science-background.jpg)',
+          backgroundImage:
+            "url(images/minimalist_data_science_wireframe_gradient_background.jpg)",
         }}
       >
         <div className="absolute inset-0 bg-neutral-900/40"></div>
@@ -33,21 +34,21 @@ const Hero = () => {
           Hard Joshi
         </h1>
         <p className="text-xl lg:text-2xl font-normal mb-8 max-w-3xl mx-auto leading-relaxed text-neutral-200">
-          Data Science & AI Student building solutions with data. 
-          Transforming complex information into actionable insights through 
-          structured problem-solving and predictive modeling.
+          Data Science & AI Student building solutions with data. Transforming
+          complex information into actionable insights through structured
+          problem-solving and predictive modeling.
         </p>
-        
+
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-          <button 
+          <button
             onClick={scrollToProjects}
             className="bg-primary-500 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-primary-600 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md min-h-[56px] flex items-center"
           >
             View My Work
             <ArrowRight className="ml-2 w-5 h-5" />
           </button>
-          
-          <button 
+
+          <button
             onClick={scrollToContact}
             className="border-2 border-white/30 bg-white/10 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white/20 hover:border-white/50 transition-all duration-200 min-h-[56px] backdrop-blur-sm"
           >
@@ -57,17 +58,17 @@ const Hero = () => {
 
         {/* Social Links */}
         <div className="flex items-center justify-center gap-6 mt-12">
-          <a 
-            href="https://linkedin.com/in/hardjoshi" 
-            target="_blank" 
+          <a
+            href="https://linkedin.com/in/hardjoshi"
+            target="_blank"
             rel="noopener noreferrer"
             className="text-white/80 hover:text-white transition-colors duration-200"
           >
             <Linkedin className="w-6 h-6" />
           </a>
-          <a 
-            href="https://github.com/haardjoshi" 
-            target="_blank" 
+          <a
+            href="https://github.com/haardjoshi"
+            target="_blank"
             rel="noopener noreferrer"
             className="text-white/80 hover:text-white transition-colors duration-200"
           >
@@ -76,7 +77,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
