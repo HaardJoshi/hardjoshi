@@ -30,7 +30,13 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
-        <h1 className="text-6xl lg:text-7xl font-bold mb-6 tracking-tight">
+        <h1
+          className="text-6xl lg:text-7xl font-bold mb-6 tracking-tight"
+          style={{
+            textShadow:
+              "-1px -1px 0 rgba(255,255,255,0.3), 1px -1px 0 rgba(255,255,255,0.3), -1px 1px 0 rgba(255,255,255,0.3), 1px 1px 0 rgba(255,255,255,0.3)",
+          }}
+        >
           Hard Joshi
         </h1>
         <p className="text-xl lg:text-2xl font-normal mb-8 max-w-3xl mx-auto leading-relaxed text-neutral-200">
